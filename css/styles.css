@@ -2,8 +2,26 @@
     box-sizing: border-box;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+}
+
+.whats-app {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 3px 4px 3px #999;
+    right: 15px;
+    z-index: 100;
+}
+
+.my-float {
+    margin-top: 10px;
 }
 
 #fixed-contact{
@@ -13,11 +31,12 @@
     padding: 0.5rem;
     color: white;
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: 8px;
 
 }
 
 #header{
-    background-color: #E4F9F5;
+    background-color: #E8C831;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -35,32 +54,42 @@
 #header a{
     text-decoration: none;
     color: black;
-    font-weight:bolder
+    font-weight: 400;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    background-color: white;
+    display: inline-block;
+    padding: 20px;
 }
+
+#header a:hover{
+    color: white;
+    background-color: black;
+}
+
 
 #logo img{
     width: 100%;
-    height: 100px;
+    height: 150px;
     object-fit: contain;
 }
-
 
 
 #home-image{
     width: 100%;
     height: 85vh;
-    background-image: url(../images/home-image/image1.jpg);
+    background-image: url(../images/home-image/home-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 5%;
+    margin-top: 5px;
 
 }
 
 #home-div{
-    background-color: rgba(255, 255, 255, 0.4);
     border-radius: 2px;
     width: 75%;
     display: flex;
@@ -72,24 +101,36 @@
 }
 
 #home-div h1{
-    font-size: 30px;
-    font-family: 'Ysabeau', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 5em;
     text-align: center;
     margin-top: 5rem;
+    color: white;
+    text-shadow: 0 0 3px #25d366, 0 0 15px #E8C831;
 }
 
 #home-div h2{
-    font-family: 'Ysabeau', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     padding: 0 20%;
+    color: white;
+    text-shadow: 0 0 3px black, 0 0 5px #E8C831;
 }
 
 #home-div a{
-    background-color: green;
+    background-color: #25d366;
     margin-bottom: 5rem;
     padding: 20px;
     color: white;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+#home-div a:hover{
+    background-color: black;
+    color: #25d366;
 }
 
 #about-us{
@@ -115,7 +156,7 @@
 
 #about-us-img img{
     width: 100%;
-    box-shadow: 10px 10px 10px #30E3DF;
+    box-shadow: 10px 10px 10px #27DCE8;
 
 }
 
@@ -123,8 +164,10 @@
 #about-us-text-div{
     width: 66%;
     min-width: 520px;
-    height: 100vh;
     flex-wrap: wrap;
+    font-family: 'Italiana', serif;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 #about-us-text{
@@ -151,7 +194,7 @@
 }
 
 #project-1, #project-2, #project-3, #project-4, #project-5, #project-6{
-    width: 33%;
+    width: 33.33%;
     background-size: cover;
     height: 440px;
     display: flex;
@@ -167,32 +210,59 @@
     padding: 20px;
 }
 
+#divider{
+    margin-top: 5em;
+    width: 100vw;
+    height: 15vh;
+    border-top: 100px solid transparent;
+    border-left: 100vw solid black;
+    border-bottom: 40px solid transparent;
+
+}
+
+#divider-2 {
+    width: 100vw;
+    height: 1vh;
+    border-top: 50px solid transparent;
+    border-left: 100vw solid black;
+
+}
+
+
+#divider-3 {
+    width: 100vw;
+    height: 1vh;
+    border-right: 100vw solid black;
+    border-bottom: 40px solid transparent;
+
+}
+
 
 
 
 #project-1{
-    background-image: url(../images/projects/projects-1.png);
+    background-image: url(../images/projects/1.jpg);
 
 }
 
 #project-2{
-    background-image: url(../images/projects/projects-2.jpg);
+    background-image: url(../images/projects/2.jpg);
 }
 
 #project-3{
-    background-image: url(../images/projects/projects-3.png);
+    background-image: url(../images/projects/3.jpg);
 }
 
 #project-4{
-    background-image: url(../images/projects/projects-4.jpg);
+    background-image: url(../images/projects/4.jpg);
 }
 
 #project-5{
-    background-image: url(../images/projects/projects-5.jpg);
+    background-image: url(../images/projects/5.jpg);
 }
 
 #project-6{
-    background-image: url(../images/projects/projects-6.jpg);
+    background-image: url(../images/projects/6.jpg);
 }
 
 .contato{
@@ -265,27 +335,7 @@
 
 
 
-
-#animated-presentation{
-    margin: 2rem 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.animated-logo{
-    width: 33%;
-    height: 160px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
 #our-team{
-    margin-top: 10rem;
     width: 100%;
     display: flex;
 }
@@ -326,11 +376,22 @@
 #our-team button{
     width: 50%;
     background-color: #13005A;
-    height: 30px;
-    margin: 20px 0 10px 0;
+    height: 50px;
+    margin: 50px auto;
     border: none;
     color: white;
     overflow: hidden;
+}
+
+#our-team button:hover{
+    color: white;
+    background-color: #25d366;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+#our-team button i:hover{
+    font-size: 40px;
 }
 
 #our-team-text{
@@ -340,6 +401,8 @@
     justify-content: center;
     padding: 30px;
     text-align: justify;
+    font-family: 'Montserrat';
+    font-style: italic;
 }
 
 #our-team-text h1{
@@ -395,6 +458,13 @@
     margin: 20px;
 }
 
+#form textarea{
+    width: 400px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
 
 footer{
     width: 100%;
@@ -421,7 +491,7 @@ footer{
     object-fit: cover;
 }
 
-.footer-div i{
+.footer-div a{
     margin: auto;
 }
 
@@ -439,9 +509,9 @@ footer{
 @media screen and (max-width: 920px){
     
     #header{
-        background-color: #E4F9F5;
+        background-color: #E8C831;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
     }
     
@@ -456,7 +526,7 @@ footer{
     #home-image{
         width: 100%;
         height: unset;
-        background-image: url(../images/home-image/image1.jpg);
+        background-image: url(../images/home-image/home-image.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
@@ -468,8 +538,8 @@ footer{
 
 
     #home-div a{
-        background-color: red;
-        margin-bottom: 0.5rem;
+        background-color: #25d366;
+        margin-bottom: 0.9rem;
         padding: 20px;
         color: white;
         text-decoration: none;
@@ -478,10 +548,13 @@ footer{
     #home-div h1{
         width: 100%;
         font-size: 35px;
-        font-family: 'Ysabeau', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
         text-align: center;
         margin-top: 1rem;
         padding: 10px;
+        text-shadow: 2px 2px 2px black;
+        color: white;
     }
 
     #about-us{
@@ -516,7 +589,7 @@ footer{
         width: 100vw;
         text-align: justify;
         padding: 20px;
-        padding-right: 0;
+        padding-right: 20px;
         height: unset;
         display: flex;
         flex-direction: column;
@@ -742,6 +815,42 @@ footer{
 
     #google-map iframe {
         width: 90%;
+    }
+
+    #divider{
+        margin-top: 5em;
+        width: 100vw;
+        height: 10vh;
+        border-top: 10px solid transparent;
+        border-left: 100vw solid black;
+        border-bottom: 40px solid transparent;
+
+    }
+
+    #divider-2 {
+        width: 100vw;
+        height: 1vh;
+        border-top: 0px solid transparent;
+        border-left: 100vw solid black;
+
+    }
+
+
+    #divider-3 {
+        width: 100vw;
+        height: 1vh;
+        border-right: 100vw solid black;
+        border-bottom: 40px solid transparent;
+
+    }
+
+
+    #form textarea{
+        width: 90vw;
+        background-color: black;
+        color: white;
+        border: none;
+        overflow: hidden;
     }
 }
 
